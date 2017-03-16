@@ -1,0 +1,61 @@
+Project Details
+================
+This project is a 9*9 sudoku solver. Sudoku is solved used AI techniques, more details is given in the pdf.
+
+
+Author
+==============
+Shivam Mittal
+2nd year B.Tech Computer Science Engineering, IIT Ropar
+Email - 2015csb1032@iitrpr.ac.in
+Github profile - github.com/shivam5
+
+
+Task1 - Sudoku Solver using CSP
+================================
+
+File 
+-----
+CODE/q1/main1.cpp
+
+How to compile and run
+-------------------------
+1. Open cmd, go to the respective directory in cmd (Code/q1/)
+2. Type g++ -O3 main1.cpp
+3. Type ./a.out <inputfile> <outputfile> <algo>
+	where <algo> = 0,1,2,3 where :
+	0 = BS - Simple backtracking search, no heuristic
+	1 = BS-I - Using MRV heuristic
+	2 = BS-II - Using MRV+LCV heuristic
+	3 = BS-MAC - Using MRV+LCV heuristic + MAC constraint propagation
+
+Output files
+-------------
+The sample generated output file for each algorithm is kept in Output/q1.
+where :
+	algo0.txt = Output using BS 
+	algo1.txt = Output using BS-I
+	algo2.txt = Output using BS-II
+	algo3.txt = Output using BS-MAC 
+
+
+
+Task2 - Sudoku Solver using MiniSAT
+====================================
+
+File 
+-----
+CODE/q2/main2.cpp
+
+How to compile and run
+-------------------------
+Note : The MiniSat_v1.14 folder with all the files should be there in the directory containing main2.cpp
+1. Open cmd, go to the respective directory in cmd (Code/q2/)
+2. Type g++ main2.cpp
+3. Type ./a.out <inputfile> <outputfile>
+
+Output files
+-------------
+The sample generated output file is kept in Output/q2.
+
+Note : The cnf generated are optimized, (to that there is a little lack of generality in the program. Only sudokus of 9*9 will be solved)
